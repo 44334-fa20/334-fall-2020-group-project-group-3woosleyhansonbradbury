@@ -1,5 +1,21 @@
-nav{height: 110px;
+body{font-family: sans-serif;
+     background-color: E6E6E6;
+}
+nav{height: 0px;
 }
 nav div{background-color: #58ADFD;
         margin-left: 235px;
+        height: 65px;
+        padding-left: 50px;
+        font-size: 30px;
+        padding-top: 35px;
+
 }
+a:link{text-decoration: none;
+       margin-right: 50px;
+       color: white;
+}
+a:visited{color: white;
+}
+
+    
