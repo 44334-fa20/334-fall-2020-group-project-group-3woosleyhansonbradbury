@@ -1,21 +1,23 @@
-body{font-family: sans-serif;
-     background-color: E6E6E6;
+body {
+	font-family: sans-serif;
+	background-color: E6E6E6;
 }
-nav{height: 0px;
+nav {
+	height: 0px;
 }
-nav div{background-color: #58ADFD;
-        margin-left: 235px;
-        height: 65px;
-        padding-left: 50px;
-        font-size: 30px;
-        padding-top: 35px;
-
+nav div {
+	background-color: #58adfd;
+	margin-left: 235px;
+	height: 65px;
+	padding-left: 50px;
+	font-size: 30px;
+	padding-top: 35px;
 }
-a:link{text-decoration: none;
-       margin-right: 50px;
-       color: white;
+nav a:link {
+	text-decoration: none;
+	margin-right: 50px;
+	color: white;
 }
-a:visited{color: white;
+nav a:visited {
+	color: white;
 }
-
-    
