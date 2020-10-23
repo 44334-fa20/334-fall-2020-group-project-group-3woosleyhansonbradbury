@@ -1,23 +1,48 @@
 body {
 	font-family: sans-serif;
-	background-color: E6E6E6;
+        background-color: #E6E6E6;
+        margin: 0;
 }
-nav {
-	height: 0px;
+main {
+        margin-left: 25%;
+        padding: 1px 1px;
+        height: 100%;
 }
-nav div {
-	background-color: #58adfd;
-	margin-left: 235px;
-	height: 65px;
-	padding-left: 50px;
-	font-size: 30px;
-	padding-top: 35px;
+footer {
+        margin-left: 25%;
+        padding: 1px 1px;
+        height: 100%;
 }
-nav a:link {
+nav ul {
+        font-size: 30px;
+        background-color: #58adfd;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 20%;
+        height: 100%;
+        position: fixed;
+}
+nav li {
+        text-decoration: none;
+}
+nav li a {
+        display: block;
+        height: 30px;
+        color: #000000;
+        padding: 25px 0px 25px 25px;
+}
+nav li a.active {
+        background-color: #E6E6E6;
+        color: black;
+}
+nav li a:link {
 	text-decoration: none;
-	margin-right: 50px;
 	color: white;
 }
-nav a:visited {
-	color: white;
+nav li a:hover:not(.active) {
+        color: #b9dcfd;
+}
+#image-carousel {
+        width: 100%;
 }
