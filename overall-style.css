@@ -43,6 +43,10 @@ nav li a:link {
 nav li a:hover:not(.active) {
         color: #b9dcfd;
 }
+nav li:last-child {
+        position: absolute;
+        bottom: 0;
+}
 #image-carousel {
         width: 100%;
 }
