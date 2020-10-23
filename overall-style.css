@@ -4,14 +4,25 @@ body {
         margin: 0;
 }
 main {
-        margin-left: 25%;
-        padding: 1px 1px;
+        margin-left: 20%;
+        padding: 1px 25px;
         height: 100%;
 }
 footer {
-        margin-left: 25%;
-        padding: 1px 1px;
-        height: 100%;
+        margin-left: 20%;
+        padding: 10px 25px;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        border-top: 1px solid black;
+        display: flex;
+}
+footer a {
+        text-decoration: none;
+        color: black;
+}
+footer a:hover {
+        color: #b9dcfd;
 }
 nav ul {
         font-size: 30px;
@@ -47,6 +58,13 @@ nav li:last-child {
         position: absolute;
         bottom: 0;
 }
-#image-carousel {
-        width: 100%;
+.col-1 {
+        padding-top: 20px;
+        flex: 3;
+}
+.col-2 {
+        flex: 3;
+}
+.col-3 {
+        flex: 3;
 }
