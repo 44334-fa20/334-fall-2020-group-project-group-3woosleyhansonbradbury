@@ -36,7 +36,8 @@ nav ul {
 }
 nav li {
         text-decoration: none;
-        border: solid 1px lightgrey;
+        border-top: solid 1px #E6E6E6;
+        border-bottom: solid 1px #E6E6E6;
 }
 nav li a {
         display: block;
@@ -57,11 +58,16 @@ nav li a:hover:not(.active) {
 }
 nav li:first-child {
         border: none;
+        border-bottom: solid 2px #E6E6E6;
+}
+nav li:nth-child(5) {
+        border-bottom: solid 2px #E6E6E6;
 }
 nav li:last-child {
         position: absolute;
         bottom: 0;
-        width: 99%;
+        width: 100%;
+        border-top: solid 2px #E6E6E6;
 }
 .col-1 {
         padding-top: 20px;
@@ -72,4 +78,9 @@ nav li:last-child {
 }
 .col-3 {
         flex: 3;
+        padding-right: 50px;
+}
+.responsive {
+        width: 100%;
+        height: auto;
 }
