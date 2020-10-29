@@ -1,6 +1,6 @@
 body {
 	font-family: sans-serif;
-        background-color: #E6E6E6;
+        background-color: beige;
         margin: 0;
 }
 main {
@@ -32,6 +32,7 @@ nav ul {
         width: 15%;
         height: 100%;
         position: fixed;
+        border-right: 5px groove white;
 }
 nav li {
         text-decoration: none;
@@ -77,6 +78,7 @@ nav li:last-child a {
 .col-3 {
         flex: 3;
         padding-right: 50px;
+     
 }
 .responsive {
         width: 100%;
