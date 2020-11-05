@@ -1,17 +1,17 @@
 body {
 	font-family: sans-serif;
-        background-color: beige;
+        background-color: #e6e6e6;
         margin: 0;
 }
 main {
-        margin-left: 20%;
+        margin-left: 15%;
         padding: 1px 25px;
         height: 100%;
 }
 footer {
         margin-left: 20%;
         padding: 10px 25px;
-        width: 100%;
+        width: 70%;
         position: relative;
         bottom: 0;
         border-top: 1px solid black;
@@ -78,7 +78,6 @@ nav li:last-child a {
 .col-3 {
         flex: 3;
         padding-right: 50px;
-     
 }
 .responsive {
         width: 100%;
