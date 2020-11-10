@@ -5,6 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scrumptious Catering Homepage</title>
     <link rel="stylesheet" href="overall-style.css">
+    <style>
+        .botnlogo{float: right;
+                  padding-top: 10px;    
+        }
+        .wrapthing{display: flex;
+        }
+        .col-2{flex: 6;
+        }
+        .photogimg{position: absolute;
+                   z-index: -1;
+        }
+        footer{margin-top: 175px;
+        }
+        #phogalbutton{position: absolute;
+                      top: 350px;
+                      left: 400px;
+                      z-index: 0;
+                      background-color: lightgrey;
+                      text-decoration: none;
+                      color: black;
+                      padding: 5px;
+                      border: 2px solid grey;
+        }
+        p{font-size: 125%;
+        }
+        h2{position: absolute;
+           color: white;
+           background-color: #58adfd;
+           width: 400px;
+           font-size: 300%;
+           text-align: center;
+           color: transparent;
+           opacity: .6;
+           flex-wrap: wrap;
+           top: 75px;
+           padding-top: 20px;
+           padding-bottom: 20px;
+        }
+        h3{position: absolute;
+           color: white;
+           width: 400px;
+           font-size: 300%;
+           text-align: center;
+           flex-wrap: wrap;
+           top: 60px;
+           padding-top: 20px;
+           padding-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
     <nav>
@@ -17,12 +66,23 @@
             <li><a href="https://www.ezcater.com/catering/pvt/scrumptious-catering-1">EZCater</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="wrapthing">
+        <div class="col-1">
+        <div class="photogimg">
+            <img src="images/buffet.png" alt="Full Service Buffet" style="width:400px; height:auto;">
+        </div>
         <h2>Your Event Deserves the Best Meal</h2>
-        <a href="photo-gallery.html">Photo Gallery</a>
+        <h3>Your Event Deserves The Best Meal</h3>
         
+        <a href="photo-gallery.html" id="phogalbutton">Photo Gallery</a>
+        </div>
+        <div class="col-2">
+                <div class="botnlogo">
+            <img src="images/2020%20BONL%20LOGO.png" alt="2020 Best of the Northland Gold Award" style="width:250px; height:auto;">
+        </div>
         <h1>Our Yummy Story</h1>
         <p>At Scrumptious Catering we believe in offering high quality menu items that are freshly prepared with only the finest ingredients at an affordable price.  We also recognize the importance of offering individual attention to every customer and event  from the casual get-together to more formal or corporate gatherings.  Our experienced and professional staff is ready to assist you to make your event a successful one whether you prefer to custom-plan the menu yourself or let us handle the details from start to finish.  Our goal at Scrumptious Catering is to cater to your individual needs as well as your menu needs.  We can help you create your event in the way you decide it should be created.  Contact us and find out how simple it is to begin planning your important event today.</p>
+        </div>
 
     </main>
     <footer>
