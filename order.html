@@ -8,6 +8,7 @@
     <style>
         #order-form-wrapper {
             display: flex;
+            text-align: center;
         }
     </style>
 </head>
@@ -23,39 +24,41 @@
         </ul>
     </nav>
     <main>
-        <h1 style="padding-top: 25px; text-align: center;">Contact Us</h1>
+        <h1 style="padding-top: 25px; text-align: center;">Place an Order</h1>
         <form action="" id="contactform">
             <div id="order-form-wrapper">
-                <div class="col-1">
+                <div class="col-1" style="margin-bottom: 25px;">
                     <label for="fname">First Name</label><br>
                     <input type="text" id="fname" name="fname" style="width: 60%;"><br>
                     <label for="lname">Last Name</label><br>
                     <input type="text" id="lname" name="lname" style="width: 60%;"><br>
                     <label for="Email">E-mail Address</label><br>
-                    <input type="text" id="email" name="email" style="width: 60%;"><br>
+                    <input type="email" id="email" name="email" style="width: 60%;"><br>
                 </div>
-                <div class="col-2">
+                <div class="col-2" style="margin-top: 25px;">
                     <label for="phone">Phone Number</label><br>
-                    <input type="text" id="phone" name="phone"><br>
+                    <input type="text" id="phone" name="phone" style="width: 60%;"><br>
                     <label for="event-type">Event Type</label><br>
-                    <input type="text" id="event-type" name="event-type"><br>
+                    <input type="text" id="event-type" name="event-type" style="width: 60%;"><br>
                     <label for="event-date">Date</label><br>
-                    <input type="text" id="event-date" name="event-date"><br>
+                    <input type="date" id="event-date" name="event-date" style="width: 60%;"><br>
                 </div>
-                <div class="col-3">
+                <div class="col-3" style="margin-top: 25px;">
                     <label for="guest-num">Number of Guests</label><br>
-                    <input type="text" id="guest-num" name="guest-num"><br>
+                    <input type="text" id="guest-num" name="guest-num" style="width: 60%;"><br>
                     <label for="event-location">Event Location</label><br>
-                    <input type="text" id="event-location" name="event-location"><br>
+                    <input type="text" id="event-location" name="event-location" style="width: 60%;"><br>
                     <label for="event-time">Time of Event</label><br>
-                    <input type="text" id="event-time" name="event-time"><br>
+                    <input type="text" id="event-time" name="event-time" style="width: 60%;"><br>
                 </div>
             </div>
-            <label for="subject">Subject</label><br>
-            <input type="text" id="subject" name="subject" style="width: 60%;"><br>
-            <label for="comments">Comments</label><br>
-            <textarea id="comments" name="comments" placeholder="Write something.." style="height:170px; width: 60%;"></textarea><br>
-            <input type="submit" value="Submit">
+            <div style="text-align: center;">
+                <label for="subject">Subject</label><br>
+                <input type="text" id="subject" name="subject" style="width: 60%;"><br>
+                <label for="comments">Comments</label><br>
+                <textarea id="comments" name="comments" placeholder="Write something.." style="height:170px; width: 60%;"></textarea><br>
+                <input type="submit" value="Submit" style="margin-bottom: 25px;">
+            </div>
         </form>
     </main>
     <footer>
