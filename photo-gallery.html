@@ -1,50 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photo Gallery</title>
     <link rel="stylesheet" href="overall-style.css">
     <style>
-        h1{font-size: 300%;
-           font-family: sans-serif;
-           text-align: center;
+        h1 {
+            font-size: 300%;
+            font-family: sans-serif;
+            text-align: center;
             background-color: #58adfd;
             padding: 10px;
             color: white;
         }
+
         .grid-container {
             display: grid;
             grid-template-columns: auto auto auto;
             background-color: #e6e6e6;
             padding-bottom: 20px;
         }
-        .photog{
+
+        .photog {
             background-color: #e6e6e6;
             font-size: 30px;
             text-align: center;
         }
-    @media screen and (max-width: 1919px) {
-        .grid-container {
-            display: grid;
-            grid-template-columns: auto auto;
-            background-color: #e6e6e6;
-            padding-bottom: 20px;
+
+        @media screen and (max-width: 1919px) {
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto;
+                background-color: #e6e6e6;
+                padding-bottom: 20px;
+            }
         }
-    }
-    @media screen and (max-width: 850px) {
-        .grid-container {
-            display: grid;
-            grid-template-columns: auto;
-            background-color: #e6e6e6;
-            padding-bottom: 20px;
-    }
+
+        @media screen and (max-width: 850px) {
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto;
+                background-color: #e6e6e6;
+                padding-bottom: 20px;
+            }
+        }
     </style>
 </head>
+
 <body>
     <nav>
-        <ul>
-            <li><a href="index.html" style="padding: 10px 35px 75px 35px;"><img src="images/ScrumptiousCateringLogo.png" alt="scrumptious catering logo" class="responsive"></a></li>
+        <ul id="navbar">
+            <li><button id="navbarclose-btn" onclick="closeNavbar()">&times;</button></li>
+            <li><a href="index.html" style="padding: 10px 35px 75px 35px;"><img src="images/ScrumptiousCateringLogo.png"
+                        alt="scrumptious catering logo" class="responsive"></a></li>
             <li><a href="catering-options.html">Catering</a></li>
             <li><a href="order.html">Order</a></li>
             <li><a href="about-us.html">About Us</a></li>
@@ -53,42 +63,56 @@
         </ul>
     </nav>
     <main>
+        <button id="navbaropen-btn" onclick="openNavbar()">&#9776; Open Sidebar</button>
         <h1>
             Photo Gallery
         </h1>
         <div class="grid-container">
-            <div class="photog"><img src="images/bacon.png" alt="Sriracha Bacon Skewers" style="width:515px; height:auto;"></div>
-            
-            <div class="photog"><img src="images/lets%20eat.png" alt="Lets Eat Graphic" style="width:515px; height:auto;"></div>
-            
-            <div class="photog"><img src="images/chips%20cup.png" alt="Chip and Dip Cups" style="width:515px; height:auto;"></div>
-            
-            <div class="photog"><img src="images/tomatoes%20tray.png" alt="Caprese Skewers" style="width:515px; height:auto;"></div>
-            
-            <div class="photog"><img src="images/2020%20BONL%20LOGO.png" alt="2020 Best of the Northland 1st Place Award" style="width:515px; height:auto;"></div>
-            
-            <div class="photog"><img src="images/sausage.png" alt="Sausage Skewers" style="width:515px; height:auto;"></div>
-            
-            <div class="photog"><img src="images/potatoes.jpg" alt="Baby Baker Potatoes" style="width:515px; height:auto;"></div>
-            
-            <div class="photog"><img src="images/street%20sign.png" alt="Scrumptious Catering Street Sign" style="width:515px; height:auto;"></div>
-            
-            <div class="photog"><img src="images/fruit%20cups.png" alt="Fruit Cups" style="width:515px; height:auto;"></div>
-            
+            <div class="photog"><img src="images/bacon.png" alt="Sriracha Bacon Skewers"
+                    style="width:515px; height:auto;"></div>
+
+            <div class="photog"><img src="images/lets%20eat.png" alt="Lets Eat Graphic"
+                    style="width:515px; height:auto;"></div>
+
+            <div class="photog"><img src="images/chips%20cup.png" alt="Chip and Dip Cups"
+                    style="width:515px; height:auto;"></div>
+
+            <div class="photog"><img src="images/tomatoes%20tray.png" alt="Caprese Skewers"
+                    style="width:515px; height:auto;"></div>
+
+            <div class="photog"><img src="images/2020%20BONL%20LOGO.png"
+                    alt="2020 Best of the Northland 1st Place Award" style="width:515px; height:auto;"></div>
+
+            <div class="photog"><img src="images/sausage.png" alt="Sausage Skewers" style="width:515px; height:auto;">
+            </div>
+
+            <div class="photog"><img src="images/potatoes.jpg" alt="Baby Baker Potatoes"
+                    style="width:515px; height:auto;"></div>
+
+            <div class="photog"><img src="images/street%20sign.png" alt="Scrumptious Catering Street Sign"
+                    style="width:515px; height:auto;"></div>
+
+            <div class="photog"><img src="images/fruit%20cups.png" alt="Fruit Cups" style="width:515px; height:auto;">
+            </div>
+
             <div class="photog"><img src="images/dessert.png" alt="Chicken" style="width:515px; height:auto;"></div>
-            
-            <div class="photog"><img src="images/veggie%20tray2.png" alt="Veggie Tray" style="width:515px; height:auto;"></div>
-            
-            <div class="photog"><img src="images/table%20set.png" alt="Table Set" style="width:515px; height:auto;"></div>
-            
-            <div class="photog"><img src="images/veggie%20tray.png" alt="Veggie Tray 2" style="width:515px; height:auto;"></div>
-            
+
+            <div class="photog"><img src="images/veggie%20tray2.png" alt="Veggie Tray"
+                    style="width:515px; height:auto;"></div>
+
+            <div class="photog"><img src="images/table%20set.png" alt="Table Set" style="width:515px; height:auto;">
+            </div>
+
+            <div class="photog"><img src="images/veggie%20tray.png" alt="Veggie Tray 2"
+                    style="width:515px; height:auto;"></div>
+
             <div class="photog"><img src="images/buffet.png" alt="Buffet" style="width:515px; height:auto;"></div>
-            
+
             <div class="photog"><img src="images/tower.png" alt="Dessert Tower" style="width:515px; height:auto;"></div>
-            
-            <div class="photog"><img src="images/table%20set2.png" alt="Table Set 2" style="width:515px; height:auto;"></div>
-            
+
+            <div class="photog"><img src="images/table%20set2.png" alt="Table Set 2" style="width:515px; height:auto;">
+            </div>
+
             <div class="photog"><img src="images/cookies.jpg" alt="Cookie tray" style="width:515px; height:auto;"></div>
         </div>
     </main>
@@ -113,5 +137,7 @@
             <p>cateringkc@me.com</p>
         </div>
     </footer>
+    <script src="scripts/navbar.js"></script>
 </body>
+
 </html>

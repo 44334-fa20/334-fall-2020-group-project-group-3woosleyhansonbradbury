@@ -54,27 +54,31 @@
             padding-right: 200px;
             font-size: 110%;
         }
-    @media screen and (max-width: 1919px) {
-        .grid-container {
-            display: grid;
-            grid-template-columns: auto auto auto;
-            background-color: #e6e6e6;
-            padding-bottom: 20px;
+
+        @media screen and (max-width: 1919px) {
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                background-color: #e6e6e6;
+                padding-bottom: 20px;
+            }
+
+            @media screen and (max-width: 850px) {
+                .grid-container {
+                    display: grid;
+                    grid-template-columns: auto;
+                    background-color: #e6e6e6;
+                    padding-bottom: 20px;
+                }
+            }
         }
-        @media screen and (max-width: 850px) {
-        .grid-container {
-            display: grid;
-            grid-template-columns: auto;
-            background-color: #e6e6e6;
-            padding-bottom: 20px;
-    }
-    }
     </style>
 </head>
 
 <body>
     <nav>
-        <ul>
+        <ul id="navbar">
+            <li><button id="navbarclose-btn" onclick="closeNavbar()">&times;</button></li>
             <li><a href="index.html" style="padding: 10px 35px 75px 35px;"><img src="images/ScrumptiousCateringLogo.png"
                         alt="scrumptious catering logo" class="responsive"></a></li>
             <li><a href="catering-options.html" class="active">Catering</a></li>
@@ -85,6 +89,7 @@
         </ul>
     </nav>
     <main>
+        <button id="navbaropen-btn" onclick="openNavbar()">&#9776; Open Sidebar</button>
         <div class="thing">
             <h1>
                 Catering Menus
@@ -117,25 +122,25 @@
             <a href="http://www.scrumptiouscateringkc.com/wp-content/uploads/AllInclusiveBreakfastMenu.pdf">
                 <div class="menus"><img src="images/BreakfastMenu.jpg" alt="Breakfast Menu"></div>
             </a>
-                <a href="http://www.scrumptiouscateringkc.com/wp-content/uploads/AllInclusiveLunchMenu3.pdf">
+            <a href="http://www.scrumptiouscateringkc.com/wp-content/uploads/AllInclusiveLunchMenu3.pdf">
                 <div class="menus"><img src="images/LunchMenu.jpg" alt="Lunch Menu"></div>
             </a>
-                <a href="http://www.scrumptiouscateringkc.com/wp-content/uploads/BoxedLunchMenu2020_Merged.pdf">
+            <a href="http://www.scrumptiouscateringkc.com/wp-content/uploads/BoxedLunchMenu2020_Merged.pdf">
                 <div class="menus"><img src="images/BoxedLunches.jpg" alt="Boxed Lunch Menu"></div>
             </a>
-                <a href="http://www.scrumptiouscateringkc.com/wp-content/uploads/FullServiceCateredBuffet3.pdf">
+            <a href="http://www.scrumptiouscateringkc.com/wp-content/uploads/FullServiceCateredBuffet3.pdf">
                 <div class="menus"><img src="images/SpecialOccBuff.jpg" alt="Special Occasion Buffet Menu"></div>
             </a>
-                <a href="http://www.scrumptiouscateringkc.com/wp-content/uploads/DinnerMenu.pdf">
+            <a href="http://www.scrumptiouscateringkc.com/wp-content/uploads/DinnerMenu.pdf">
                 <div class="menus"><img src="images/DinnerMenu.jpg" alt="Dinner Menu"></div>
             </a>
-                <a href="http://www.scrumptiouscateringkc.com/wp-content/uploads/NEWSalesRepLunchMenuPage1.pdf">
+            <a href="http://www.scrumptiouscateringkc.com/wp-content/uploads/NEWSalesRepLunchMenuPage1.pdf">
                 <div class="menus"><img src="images/SalesRepMenu.jpg" alt="Sales Representative Menu"></div>
             </a>
-                <a href="http://www.scrumptiouscateringkc.com/wp-content/uploads/FullServiceCateredBuffet3.pdf">
+            <a href="http://www.scrumptiouscateringkc.com/wp-content/uploads/FullServiceCateredBuffet3.pdf">
                 <div class="menus"><img src="images/WeddingMenu.jpg" alt="Wedding Menu"></div>
             </a>
-                <a href="http://www.scrumptiouscateringkc.com/wp-content/uploads/PartyPlatterMenu2020.pdf">
+            <a href="http://www.scrumptiouscateringkc.com/wp-content/uploads/PartyPlatterMenu2020.pdf">
                 <div class="menus"><img src="images/PartyAppMenu.jpg"
                         alt="Party Platter, Appetizer and Drop Off Package Menu"></div>
             </a>
@@ -162,6 +167,7 @@
             <p>cateringkc@me.com</p>
         </div>
     </footer>
+    <script src="scripts/navbar.js"></script>
 </body>
 
 </html>

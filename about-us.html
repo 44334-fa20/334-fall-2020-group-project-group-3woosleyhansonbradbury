@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="overall-style.css">
     <style>
-        .ban{z-index: -1;}
+        .ban {
+            z-index: -1;
+        }
     </style>
 </head>
+
 <body>
     <nav>
-        <ul>
-            <li><a href="index.html" style="padding: 10px 35px 75px 35px;"><img src="images/ScrumptiousCateringLogo.png" alt="scrumptious catering logo" class="responsive"></a></li>
+        <ul id="navbar">
+            <li><button id="navbarclose-btn" onclick="closeNavbar()">&times;</button></li>
+            <li><a href="index.html" style="padding: 10px 35px 75px 35px;"><img src="images/ScrumptiousCateringLogo.png"
+                        alt="scrumptious catering logo" class="responsive"></a></li>
             <li><a href="catering-options.html">Catering</a></li>
             <li><a href="order.html">Order</a></li>
             <li><a href="about-us.html" class="active">About Us</a></li>
@@ -21,13 +27,18 @@
         </ul>
     </nav>
     <main>
+        <button id="navbaropen-btn" onclick="openNavbar()">&#9776; Open Sidebar</button>
         <div class="ban">
             <img src="images/Wide%20buffet.PNG" alt="Marcie Hanson" style="width:100%;z-index: -1;">
         </div>
         <h1 style="padding-top: 25px; text-align: center;">About Us</h1>
-        <p style="padding-top: 25px; text-align: center;">My name is Marcie Hanson I am originally from and still live in Liberty, MO. I have over 20 years experience in the food service/hospitality industry. I have always had a passion for what I do, and love helping my customers meet all of their catering/special occasion needs.</p>
+        <p style="padding-top: 25px; text-align: center;">My name is Marcie Hanson I am originally from and still live
+            in Liberty, MO. I have over 20 years experience in the food service/hospitality industry. I have always had
+            a passion for what I do, and love helping my customers meet all of their catering/special occasion needs.
+        </p>
         <br>
-        <img src="images/Headshot.PNG" style="height: 200px; width: auto; float: left; padding-right: 10px;padding-bottom: 50px;">
+        <img src="images/Headshot.PNG"
+            style="height: 200px; width: auto; float: left; padding-right: 10px;padding-bottom: 50px;">
         <h2>Marcie Hanson</h2>
         <p class="title">Owner | Professional caterer | 20+ years experience</p>
         <p>Husband- Jack | Mother of Three: Raymond, Jacob and Danny</p>
@@ -54,5 +65,7 @@
             <p>cateringkc@me.com</p>
         </div>
     </footer>
+    <script src="scripts/navbar.js"></script>
 </body>
+
 </html>

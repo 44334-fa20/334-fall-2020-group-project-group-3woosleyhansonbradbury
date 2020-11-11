@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +13,13 @@
         }
     </style>
 </head>
+
 <body>
     <nav>
-        <ul>
-            <li><a href="index.html" style="padding: 10px 35px 75px 35px;"><img src="images/ScrumptiousCateringLogo.png" alt="scrumptious catering logo" class="responsive"></a></li>
+        <ul id="navbar">
+            <li><button id="navbarclose-btn" onclick="closeNavbar()">&times;</button></li>
+            <li><a href="index.html" style="padding: 10px 35px 75px 35px;"><img src="images/ScrumptiousCateringLogo.png"
+                        alt="scrumptious catering logo" class="responsive"></a></li>
             <li><a href="catering-options.html">Catering</a></li>
             <li><a href="order.html" class="active">Order</a></li>
             <li><a href="about-us.html">About Us</a></li>
@@ -24,6 +28,7 @@
         </ul>
     </nav>
     <main>
+        <button id="navbaropen-btn" onclick="openNavbar()">&#9776; Open Sidebar</button>
         <h1 style="padding-top: 25px; text-align: center;">Place an Order</h1>
         <form action="" id="contactform">
             <div id="order-form-wrapper">
@@ -56,7 +61,8 @@
                 <label for="subject">Subject</label><br>
                 <input type="text" id="subject" name="subject" style="width: 60%;"><br>
                 <label for="comments">Comments</label><br>
-                <textarea id="comments" name="comments" placeholder="Write something.." style="height:170px; width: 60%;"></textarea><br>
+                <textarea id="comments" name="comments" placeholder="Write something.."
+                    style="height:170px; width: 60%;"></textarea><br>
                 <input type="submit" value="Submit" style="margin-bottom: 25px;">
             </div>
         </form>
@@ -82,5 +88,7 @@
             <p>cateringkc@me.com</p>
         </div>
     </footer>
+    <script src="scripts/navbar.js"></script>
 </body>
+
 </html>

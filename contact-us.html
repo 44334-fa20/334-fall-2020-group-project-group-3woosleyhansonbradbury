@@ -17,8 +17,10 @@
 
 <body>
     <nav>
-        <ul>
-            <li><a href="index.html" style="padding: 10px 35px 75px 35px;"><img src="images/ScrumptiousCateringLogo.png" alt="scrumptious catering logo" class="responsive"></a></li>
+        <ul id="navbar">
+            <li><button id="navbarclose-btn" onclick="closeNavbar()">&times;</button></li>
+            <li><a href="index.html" style="padding: 10px 35px 75px 35px;"><img src="images/ScrumptiousCateringLogo.png"
+                        alt="scrumptious catering logo" class="responsive"></a></li>
             <li><a href="catering-options.html">Catering</a></li>
             <li><a href="order.html">Order</a></li>
             <li><a href="about-us.html">About Us</a></li>
@@ -27,6 +29,7 @@
         </ul>
     </nav>
     <main>
+        <button id="navbaropen-btn" onclick="openNavbar()">&#9776; Open Sidebar</button>
         <h1 style="padding-top: 25px; text-align: center;">Contact Us</h1>
         <form action="" id="contactform">
             <label for="name">Name</label><br>
@@ -36,7 +39,8 @@
             <label for="subject">Subject</label><br>
             <input type="text" id="subject" name="subject" style="width: 60%;"><br>
             <label for="comments">Comments</label><br>
-            <textarea id="comments" name="comments" placeholder="Write something.." style="height:170px; width: 60%;"></textarea><br>
+            <textarea id="comments" name="comments" placeholder="Write something.."
+                style="height:170px; width: 60%;"></textarea><br>
             <input type="submit" value="Submit">
         </form>
     </main>
@@ -61,6 +65,7 @@
             <p>cateringkc@me.com</p>
         </div>
     </footer>
+    <script src="scripts/navbar.js"></script>
 </body>
 
 </html>
