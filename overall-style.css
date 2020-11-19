@@ -1,6 +1,6 @@
 body {
 	font-family: sans-serif;
-	background-color: #e6e6e6;
+	background-color: white;
 	margin: 0;
 }
 main {
@@ -46,7 +46,7 @@ nav li a {
 	background-color: #58adfd;
 }
 nav li a.active {
-	background-color: #e6e6e6;
+	background-color: #white;
 	color: black;
 }
 nav li a:link {
