@@ -33,7 +33,7 @@
     <main>
         <button id="navbaropen-btn" onclick="openNavbar()">&#9776; Open Sidebar</button>
         <h1 style="padding-top: 25px; text-align: center;">Place an Order</h1>
-        <form action="" id="contactform">
+        <form action="" id="contactform" onsubmit="return ValidateForm()">
             <div id="order-form-wrapper">
                 <div class="col-1" style="margin-bottom: 25px;">
                     <label for="fname">First Name</label><br>
@@ -93,6 +93,7 @@
         </div>
     </footer>
     <script src="scripts/navbar.js"></script>
+    <script src="scripts/order.js"></script>
 </body>
 
 </html>

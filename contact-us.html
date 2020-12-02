@@ -33,11 +33,11 @@
     <main>
         <button id="navbaropen-btn" onclick="openNavbar()">&#9776; Open Sidebar</button>
         <h1 style="padding-top: 25px; text-align: center;">Contact Us</h1>
-        <form action="" id="contactform">
+        <form action="" id="contactform" onsubmit="return ValidateForm()">
             <label for="name">Name</label><br>
             <input type="text" id="name" name="name" style="width: 60%;"><br>
             <label for="email">E-mail Address</label><br>
-            <input type="text" id="email" name="email" style="width: 60%;"><br>
+            <input type="email" id="email" name="email" style="width: 60%;"><br>
             <label for="subject">Subject</label><br>
             <input type="text" id="subject" name="subject" style="width: 60%;"><br>
             <label for="comments">Comments</label><br>
@@ -68,6 +68,7 @@
         </div>
     </footer>
     <script src="scripts/navbar.js"></script>
+    <script src="scripts/contact-us.js"></script>
 </body>
 
 </html>
